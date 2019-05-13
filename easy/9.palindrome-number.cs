@@ -5,31 +5,46 @@
  */
 public class Solution
 {
+    // public bool IsPalindrome(int x)
+    // {
+    //     if (x < 0)
+    //     {
+    //         return false;
+    //     }
+    //     int length = x.ToString().Length;
+    //     string[] chars = new string[length];
+    //     int index = 0;
+    //     while (x > 0)
+    //     {
+    //         chars[index] = (x % 10).ToString();
+    //         x = x / 10;
+    //         index++;
+    //     }
+
+    //     for (int i = 0; i < length/2; i++)
+    //     {
+    //         if(chars[i]!=chars[length-i-1])
+    //         {
+    //             return false;
+    //         }
+    //     }
+
+    //     return true;
+    // }
     public bool IsPalindrome(int x)
     {
-        if (x < 0)
+        if (x < 0 || (x % 10 == 0 && x != 0))
         {
             return false;
         }
-        int length = x.ToString().Length;
-        string[] chars = new string[length];
-        int index = 0;
-        while (x > 0)
+
+        int revNum = 0;
+        while (x > revNum)
         {
-            chars[index] = (x % 10).ToString();
+            revNum = revNum * 10 + x % 10;
             x = x / 10;
-            index++;
         }
-
-        for (int i = 0; i < length/2; i++)
-        {
-            if(chars[i]!=chars[length-i-1])
-            {
-                return false;
-            }
-        }
-
-        return true;
+        return x == revNum || x == revNum / 10;         
     }
 }
 
