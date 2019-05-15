@@ -91,7 +91,9 @@ public class Solution
             case 'M':
                 return 1000;
         }
-    return 0;
+        
+        //wrong char
+        return 0;
     }
 }
 
