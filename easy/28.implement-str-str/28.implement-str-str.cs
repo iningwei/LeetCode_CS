@@ -3,9 +3,11 @@
  *
  * [28] Implement strStr()
  */
-public class Solution {
-    public int StrStr(string haystack, string needle) {
-        
+public class Solution
+{
+    public int StrStr(string haystack, string needle)
+    {
+        return haystack.IndexOf(needle);
     }
 }
 
