@@ -1,4 +1,5 @@
-#合并两个已排序的链表
+# 合并两个已排序的链表
+
 ## 题干
 把两个已经排好序的链表合并为一个链表，最终的链表依旧有序且包含输入的两个链表中的所有元素。
 
@@ -86,7 +87,7 @@ public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         return header;
     }
 ```
-案列测试结果统计:
+测试结果统计:
 ```
 √ Accepted
   √ 208/208 cases passed (100 ms)
@@ -119,7 +120,7 @@ public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         }
     }
 ```
-结果统计：
+测试结果统计：
 ```
 √ Accepted
   √ 208/208 cases passed (100 ms)
