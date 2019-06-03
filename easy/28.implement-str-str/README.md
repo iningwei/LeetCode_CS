@@ -21,33 +21,10 @@
   √ Your memory usage beats 5.1 % of csharp submissions (21.6 MB)
 ```
 ### 参考答案
-考察的知识点分析等
-```
-    public int StrStr(string haystack, string needle)
-    {
-        if (haystack.Equals(needle)) {
-            return 0;
-        }        
-        if (haystack.Length == 0) {
-            return -1;
-        }
-        int back = 0;
-        int haystackLen=haystack.Length;
-        int needleLen = needle.Length;
-        while (back <=haystackLen -needleLen) {
-            String cur = haystack.Substring(back, needleLen);
-            if (cur.Equals(needle)) {
-                return back;
-            }       
-            back++;
-        }
-        return -1;
-    }
-```
+本体主要考察字符串中寻找子串的问题，笔者的答案自然不是期望的。
+正确的解法即大名鼎鼎的KMP算法。
+
 测试结果统计：
 ```
-√ Accepted
-  √ 74/74 cases passed (76 ms)
-  √ Your runtime beats 66.18 % of csharp submissions
-  √ Your memory usage beats 23.57 % of csharp submissions (20.7 MB)
+
 ```
