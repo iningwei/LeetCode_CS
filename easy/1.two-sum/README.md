@@ -56,7 +56,7 @@
         throw new System.Exception("can not find solution");
     }
 ```
-笔者算法的时间复杂度为n*(n/2)=O(n^2)
+笔者算法的时间复杂度为n*(n/2)=O(n<sup>2</sup>)
 
 引入hash表后事件复杂度变为n+n=O(n)
 
